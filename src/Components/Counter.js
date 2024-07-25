@@ -1,4 +1,6 @@
 import React, { useReducer } from 'react'
+import "../style.css";
+
 
 
 const Counter = () => {
@@ -11,9 +13,9 @@ const Counter = () => {
     
     <div className='number'>{state.count}</div>  
     <div className='btns-container'>
-    <button className='increment' onClick={() => dispatch({ type: 'INCREMENT' })}>+</button>
-    <button className='increment' onClick={() => dispatch({ type: 'DECREMENT' })}>-</button>
-    <button className='increment' onClick={() => dispatch({ type: 'Reset' })}>Reset</button>
+    <button className="increment" onClick={() => dispatch({ type: 'INCREMENT' })}>+</button>
+    <button className='decrement' onClick={() => dispatch({ type: 'DECREMENT' })}>-</button>
+    <button className='reset' onClick={() => dispatch({ type: 'Reset' })}>Reset</button>
     </div>
     </div>
     </>
